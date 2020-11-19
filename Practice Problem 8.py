@@ -43,6 +43,9 @@ def rohandasfraud(number):
 
 
 if __name__ == "__main__":
-    print("<----------------------------------Welcome to my program--------------------------------->")
-    inpu = int(input("Enter the number to know the table\n--> "))
-    rohandasfraud(inpu)
+    try:
+        print("<----------------------------------Welcome to my program--------------------------------->")
+        inpu = int(input("Enter the number to know the table\n--> "))
+        rohandasfraud(inpu)
+    except Exception as e:
+        print("Please enter a valid input! -_- ")
